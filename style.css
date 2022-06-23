@@ -1,0 +1,855 @@
+/* Шапка */
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #8d5353;
+    vertical-align: center;
+    padding: 0px 5%;
+    padding-left: 16%;/* Двигаме лого к меню */
+    
+}
+.logo>h1{
+    font-size: 4em;
+    text-shadow: 2px 0px 0 #ffa1a1, -2px 0px 0 #ffa1a1, 0px -2px 0 #ffa1a1, 0px 2px 0 #ffa1a1;
+}
+.btn-header{
+    color: black;
+    background-color: #ffa1a1;
+    border-color: #ffa1a1;
+    font-weight: bolder;
+    font-style: italic;
+    border-radius: 1rem;
+    width: 90%;
+    margin-top: 2rem!important;
+    margin-left: 10%;
+}
+.btn-header-2{
+    width: 75%;
+    margin-left: 15%;
+}
+body{
+    background-color: black;
+    z-index: 1;
+}
+body>.container{
+    min-height: calc(100vh - 300px);
+}
+.kolichistvo {
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: #ffa1a1;
+}
+/* конец Шапка */
+
+/* Меню с фильтрами */
+.block-left-menu{
+    margin-top: 30px;
+    width: 90%;
+    height: 125px;
+    background-color: #ffa1a1;
+    border-radius: 6%;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 10px 15px;
+}
+/* чекбокс */
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  .custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid black;
+    border-radius: 2.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  .custom-checkbox:checked+label::before {
+    border-color: black;
+    background-color: black;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+/* конец чекбокс */
+.input-menu{
+    width: 115px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: #ffa1a1;
+    color: black;
+    font-weight: bolder;
+    font-style: italic;
+    padding-left: 10px;
+    outline: none;
+}
+.span-menu{
+    font-size: 12px;
+    color: #676a67;
+}
+/* конец Меню с фильтрами */
+
+/* Товары */
+.tovari{
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 30px;
+}
+.tovar{
+    /* width: 100%; */
+    width: 25%;
+    margin: 0px 40px;
+    /* height: 300px; */
+      text-shadow: 1px 0px 0 #ffa1a1, -1px 0px 0 #ffa1a1, 0px -1px 0 #ffa1a1, 0px 1px 0 #ffa1a1;
+    font-size: 20px;
+}
+.tovar>a>img{
+    width: 220px;
+    height: 275px;
+    border-radius: 5px;
+}
+a:hover{
+    color: #000000;
+}
+
+/* конец Товары */
+
+/*  Подвал */
+footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 100px;
+    background-color: #8D5353;    font-weight: bolder;
+    font-style: italic;
+}
+.btn-create-appeal{
+    color: black;
+    background-color: #ffa1a1;
+    border-color: #ffa1a1;
+    font-weight: bolder;
+    font-style: italic;
+    border-radius: 1rem;
+    width: 90%;
+    margin-top: 2rem!important;
+}
+/* конец Подвал */
+
+/*  Страница - Создать обращение --------------------------------------------------------------------*/
+
+.btn-forma-create-appel{
+    color: black;
+    background-color: #ffa1a1;
+    border-color: #ffa1a1;
+    font-weight: bolder;
+    font-style: italic;
+    border-radius: 1rem;
+    width: 40%;
+    height: 50px;
+    margin-top: 2rem!important;
+    padding: 10px 50px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.forma-create-appel-info{
+    display: block;
+    width: 80%;
+    height: 100px;
+    color: #ffa1a1;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 30px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+.back-to-index{
+    display: inline-block;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: #8D5353;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.after::after{
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 2;
+} 
+.create-appel-forma{
+    width: 17%;
+    height: 440px;
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: #8D5353;
+    z-index: 3;
+    top: 20%;
+    left: 40%;
+    border-radius: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+.create-appel-forma>form>h5{
+    text-shadow: 1px 0px 0 #ffa1a1, -1px 0px 0 #ffa1a1, 0px -1px 0 #ffa1a1, 0px 1px 0 #ffa1a1;
+    font-size: 1.8em;
+    margin-top: 8%;
+    margin-bottom: 10%;
+}
+.create-appel-forma>form>p>select{
+    font-weight: 500;
+    font-style: italic;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    background-color: #ffa1a1;
+    outline: none;
+    border: none;
+}
+.create-appel-forma>form>p>select>option{
+    font-weight: 500;
+    font-style: italic;
+}
+.form-input-text{
+    width: 100%;
+    height: 150px;
+    background-color: #ffa1a1;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+.form-input-btn{
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffa1a1;
+    font-weight: 700;
+    font-style: italic;
+    margin: 0px 25%;
+}
+.close-form-appel{
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+    border: 1px solid black;
+    position: absolute;
+    top: -5%;
+    left: 95%;
+    text-align: center;
+    background-color: #8D5353;
+    vertical-align: middle;
+    line-height: 220%;
+    cursor: pointer;
+}
+.create-zaivka-forma{
+    width: 17%;
+    height: 500px;
+}
+.input-number{
+    width: 100%;
+    height: 40px;
+    background-color: #ffa1a1;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+/*  конец Страница - Создать обращение --------------------------------------------------------*/
+
+/*  Страница - Авторизация --------------------------------------------------------*/
+.form-auth{
+    width: 35%;
+    padding: 30px;
+    height: auto;
+    background-color: #8D5353;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.form-auth>form>h5 {
+    font-size: 1.7em;
+    text-shadow: 1px 0px 0 #ffa1a1, -1px 0px 0 #ffa1a1, 0px -1px 0 #ffa1a1, 0px 1px 0 #ffa1a1;
+}
+.region{
+    width: 100%;
+    margin-bottom: 25%;
+}
+.region>span>select {
+    width: 25%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #ffa1a1;
+    border: none;
+    padding-left: 5px;
+}
+.region>span>input {
+    width: 70%;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #ffa1a1;
+    border: none;
+    padding-left: 5px;
+    margin-left: 3%;
+    outline: none;
+}
+.form-auth>form>span>span {
+    font-size: 1em;
+    font-weight: 600;
+    width: 95%;
+    padding-left: 5px;
+    display: inline-block;
+}
+.form-auth>form>span>input {
+    background-color: #ffa1a1;
+    width: 30px;
+    height: 20px;    
+    margin-top: 5px;
+}
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+/*  конец Страница - Авторизация --------------------------------------------------------*/
+
+/*  Страница - Добавление информации о пользователи --------------------------------------------------------*/
+.form-add-info-byself{
+    width: 35%;
+    padding: 30px;
+    height: auto;
+    background-color: #8D5353;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.form-add-info-byself>h5{
+    font-size: 1.7em;
+    text-shadow: 1px 0px 0 #ffa1a1, -1px 0px 0 #ffa1a1, 0px -1px 0 #ffa1a1, 0px 1px 0 #ffa1a1;
+}
+/* кнопки  radiobutton */
+  /* для элемента input c type="radio" */
+  .custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  /* для элемента label связанного с .custom-radio */
+  .custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    font-weight: 500;
+    margin-right: 25px;
+  }
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #000000;
+  }
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #ffa1a1;
+    border-color: #000000;
+  }
+ 
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked)+label::before {
+    border-color: #ffa1a1;
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    border: 3px solid black;
+    border-color: #ffa1a1;
+    background-color: #8D5353;
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); */
+  }
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color: #8D5353;
+  }
+/* конец кнопки  radiobutton */
+
+form>div>textarea {
+    height: 60px;
+    width: 100%;
+    background-color: #ffa1a1;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-style: italic;
+    margin-top: -7px;
+    outline: none;
+
+}
+form>div>input {
+    height: 36px;
+    width: 70%;
+    background-color: #ffa1a1;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-style: italic;
+    margin-top: -7PX;
+    outline: none;
+}
+form>div>p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+.p-radioblock{
+    margin-bottom: 5px;
+}
+.btn-reg {
+    margin-top: 40px;
+    font-size: 1.2em;
+}
+/* конец  Страница - Добавление информации о пользователи --------------------------------------------------------*/
+
+/*  Страница - Добавления карты --------------------------------------------------------*/
+
+.form-add-card {
+    width: 40%;
+    padding: 30px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+.card {
+    position: absolute;
+    width: 500px;
+    background: #8D5353;
+    border-radius: 10px;
+    height: 300px;
+    border: 1px solid black;
+    top: 0%;
+}
+.card-1{
+    z-index: 2;
+    /* box-shadow: 10px 10px rgb(70 70 70 / 50%); */
+    box-shadow: 10px 10px 0px rgb(0 0 0 / 30%);
+}
+.card-2{
+    top: 50%;
+    left: 35%;
+    z-index: 1;;
+}
+#number-card{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    height: 55px;
+    font-size: 1.5em;
+    text-align: center;
+}
+#number-card-p {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-weight: 500;
+    font-style: italic;
+}
+#date-card{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    width: 20%;
+    height: 55px;
+    font-size: 1.5em;
+    text-align: center;    
+    padding: 0px 30px;
+}
+#date-card-p {
+    position: absolute;
+    top: 74%;
+    left: 5%;
+    font-weight: 500;
+    font-style: italic;
+}
+#year-card{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    width: 20%;
+    height: 55px;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0px 30px;
+}
+#year-card-p {
+    position: absolute;
+    top: 74%;
+    left: 40%;
+    font-weight: 500;
+    font-style: italic;
+}
+#number-slash {
+    position: absolute;
+    top: 50%;
+    left: 31%;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 3em;
+}
+#cvv-card {
+    position: absolute;
+    top: 60%;
+    left: 71%;
+    width: 20%;
+    height: 55px;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0px 30px;
+}
+#cvv-card-p {
+    position: absolute;
+    top: 74%;
+    left: 70%;
+    font-weight: 500;
+    font-style: italic;
+}
+.card-2-magnitka {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    background-color: #676a67;
+    top: 15%;
+    z-index: 2;
+    opacity: 0.5;
+}
+.btn-card {
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    bottom: -40%;
+    left: -40%;
+    font-size: 1.5em;
+}
+/*  конец Страница - Добавления карты --------------------------------------------------------*/
+
+/*  Страница - просмотра вещи --------------------------------------------------------*/
+
+.tovar-tovar{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.h1-tovar{
+    text-shadow: 1px 0px 0 #ffa1a1, -1px 0px 0 #ffa1a1, 0px -1px 0 #ffa1a1, 0px 1px 0 #ffa1a1;
+    color: #3c1515;
+    margin-bottom: 30px;
+}
+.tovar-tovar-img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+.h3-tovar{
+    text-shadow: 1px 0px 0 #ffa1a1, -1px 0px 0 #ffa1a1, 0px -1px 0 #ffa1a1, 0px 1px 0 #ffa1a1;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    margin-top: 10%;
+
+}
+/* .tovar-razmer{
+    font-size: 1.9em;
+    background-color: #8D5353;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+} */
+
+.tovar-razmer input[type=radio] {
+	display: none;
+}
+.tovar-razmer label {
+    font-size: 1.3em;
+    background-color: #8D5353;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    width: 100%;
+}
+ 
+/* Checked */
+.tovar-razmer input[type=radio]:checked + label {
+	background: #ffa1a1;
+}
+
+#add-to-cart{
+    width: 65%;
+    background-color: #8D5353;
+    font-size: 3em;
+    font-weight: bold;
+    border-radius: 10px;
+    font-style: italic;
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 55%;
+    cursor: pointer;
+}
+.tovar-def-zagolovok{
+    text-shadow: 1px 0px 0 #ffa1a1, -1px 0px 0 #ffa1a1, 0px -1px 0 #ffa1a1, 0px 1px 0 #ffa1a1;
+    color: #3c1515;
+    font-size: 1.9em;
+    margin: 2% 0;
+}
+.tovar-def{
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 500;
+    color: #ffa1a1;
+}
+
+/*  конец Страница - просмотра вещи --------------------------------------------------------*/
+
+/*   Страница - профиль --------------------------------------------------------*/
+.profil {
+    background-color: #ffa1a1;
+    border-radius: 10px;
+    width: 80%;
+    margin: 1% auto;
+    padding: 15px 30px;
+}
+.profil>div>div>h1 {
+    font-style: italic;
+}
+.profil>div>div>p {
+    font-weight: 700;
+}
+.profil>div>div>a>p {
+    text-decoration: underline;
+    text-align: right;
+}
+.tovar-exit{
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-color: #ffa1a1;
+    color: black;
+    margin-left: 83%;
+}
+/*   конец Страница - профиль --------------------------------------------------------*/
+
+/*   Страница - обновление карты --------------------------------------------------------*/
+#btn-update-card{
+    cursor: pointer;
+    text-align: center;
+    line-height: 2.5;
+}
+.popup-answer{
+    display: none;
+    width: 45%;
+    height: 350px;
+    background-color: #b77d7d;
+    /* background-color: red; */
+    z-index: 5;
+    border-radius: 10px;
+    position: absolute;
+    flex-wrap: wrap;
+    padding: 30px;
+    font-size: 1.2em;
+    font-weight: 700;
+    top: 0;
+    left: 50%;
+    font-style: italic;
+    font-weight: 700;
+}
+.popup-answer>p{
+    font-weight: 700;
+}
+.btn-card-update{
+    width: 51%;
+    justify-content: center;
+    vertical-align: middle;
+    background-color: #ffa1a1;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#yes-btn-update-card{
+    border: none;    
+    font-style: italic;
+    font-weight: 700;
+}
+/*   конец Страница - обновление карты --------------------------------------------------------*/
+
+/*   Страница - корзина --------------------------------------------------------*/
+.not-tovars{
+    display: block;
+}
+.not-tovars>h1 {
+    padding-top: 30px;
+    font-style: italic;
+    color: #ffa1a1;
+}
+.not-tovars>p {
+    padding-top: 25px;
+    font-style: italic;
+    color: #ffa1a1;
+    font-size: 1.5em;
+    line-height: 25px;
+}
+.back-to-index-cart{
+    width: 40%;
+    background-color: #ffa1a1;
+    height: 50px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    /* margin-top: 7%; */
+}
+.cart-wrapper{
+    width: 100%;
+    background-color: #8d5353;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding: 30px;
+}
+
+.cart-img>img{
+    margin-left: 10%;
+    width: 85%;
+    height: 300px;
+    border-radius: 10px;
+}
+.cart-img>p{
+    text-decoration: underline;
+    margin-left: 10%;
+    cursor: pointer;
+}
+.cart-def {
+    text-shadow: 1px 0px 0 #ffa1a1, -1px 0px 0 #ffa1a1, 0px -1px 0 #ffa1a1, 0px 1px 0 #ffa1a1;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 1.3em;
+    margin-top: 28%;
+}
+.cart-def>p>span{
+    text-shadow: none;
+    font-weight: 900;
+    margin-left: 3%;
+}
+
+.cart-block-price {
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 700;
+    color: black;
+}
+.cart-block-price>p>span{
+    margin-left: 15%;
+}
+.cart-sposob-oplati-zagolovok {
+    font-size: 1.3em;
+    color: black;
+    font-weight: 700;
+    font-style: italic;
+}
+  /* корзина чекбокс */
+
+  .form_radio {
+	margin-bottom: 10px;
+}
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+.form_radio label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+    border: 1px solid black;
+    border-radius: 5px;
+	/* background: url(/img/radio-1.png) 0 0 no-repeat; */
+}
+ 
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+	box-shadow: 3px 0px 3px #ffa1a1 inset, -3px 0px 3px #ffa1a1 inset, 0px -3px 3px #ffa1a1 inset, 0px 3px 3px #ffa1a1 inset; 
+}
+
+  /* конец корзина чекбокс */
+
+.cart-zakazat{
+    width: 25%;
+    background: #ffa1a1;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+    padding: 10px;
+    margin: 3% auto;
+    cursor: pointer;
+}
